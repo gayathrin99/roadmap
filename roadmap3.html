@@ -1,0 +1,245 @@
+<html>
+
+<head>
+    <meta name="description" content="Learning HTML through roadmap.sh by creating a multi-page website">
+    <meta property="og:title" content="Learning HTML via roadmap.sh" />
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        ul {
+            float: right;
+
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .section1 {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .section2>div {
+            width: 30%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .projects {
+            border-right: 1px solid black;
+        }
+
+        .workexnopensource {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: top;
+            height: 100%;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .workexnopensource>div {
+            flex: 1;
+            align-items: top;
+            border-top: 1px solid black;
+        }
+
+        .education {
+            border-left: 1px solid black;
+            gap: 10px;
+        }
+
+        .education ul {
+            list-style: circle;
+
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .section3>div {
+            width: 30%;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: rgb(231, 231, 231);
+
+        }
+
+        .section3>div p {
+            margin: 10px 0;
+        }
+
+        @media(max-width:1024px) {
+            .header {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            ul {
+                flex-direction: column;
+
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .section2 {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .section2>div {
+                width: 100%;
+            }
+
+            .section3>div {
+                width: 45%
+            }
+        }
+
+        @media(max-width:480px) {
+            .logo {
+                font-size: 16px;
+            }
+
+            ul li a {
+                font-size: 24px;
+            }
+
+            .section1 h1 {
+                font-size: 24px;
+            }
+
+            .section2 {
+                flex-direction: column;
+                gap: 20px
+            }
+
+            .section2>div {
+                width: 100%;
+                text-align: center;
+            }
+
+            .section3 {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .section3>div {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <p class="logo">Your Name</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="\projects.html">Projects</a></li>
+            <li><a href="\about.html">About</a></li>
+            <li><a href="\contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="section1">
+        <h1>Frontend developer</h1>
+        <p>html only with proper layout, no styling</p>
+    </div>
+    <div class="section2">
+        <div class="projects" style="width:30%">Projects
+            <ul>
+                <li>HTML only portfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Product Upcoming page</li>
+            </ul>
+        </div>
+        <div class="workexnopensource" style="width:30%">
+            <div class="workex">Work Experience
+                <p>roadmap.sh</p>
+                <p>Solved all frontend problems</p>
+                <a href="https://roadmap.sh/u/gayathrin">Visit my profile</a>
+            </div>
+            <div class="opensource">Open Source Work
+                <p>Contributed to 50opensource project. Made myown projects with 200GitHub starts</p>
+                <p><a href="https://github.com/gayathrin99">Visit my GitHub profile</a></p>
+            </div>
+
+        </div>
+        <div class="education" style="width:30%">Education
+            <p>Graduated with 3.76 out of 4.o GPA.Won Acme Hackathon. Organized 30 sessions.</p>
+            <p>Courses I took:</p>
+            <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction</li>
+                <li>Compute Graphics</li>
+                <li>DBMS</li>
+                <li>Distributed Database Systems</li>
+                <li>Discreet Mathematics</li>
+            </ul>
+        </div>
+    </div>
+    <h3>Reviews from my Professors</h3>
+    <div class="section3">
+
+        <div>
+
+            <p>John Doe was a brilliant studet; always stod ou with his assignmets</p>
+            <p style="color:grey;">Jane Doe</p>
+            <p style="color:grey;">Assistant Professor</p>
+        </div>
+        <div>
+
+            <p>John Doe was a brilliant studet; always stod ou with his assignmets</p>
+            <p style="color:grey;">Jane Doe</p>
+            <p style="color:grey;">Assistant Professor</p>
+        </div>
+        <div>
+
+            <p>John Doe was a brilliant studet; always stod ou with his assignmets</p>
+            <p style="color:grey;">Jane Doe</p>
+            <p style="color:grey;">Assistant Professor</p>
+        </div>
+    </div>
+</body>
+
+</html>
