@@ -1,0 +1,73 @@
+<html>
+
+<head>Image Grid</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        gap: 2px;
+
+    }
+
+    .container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .img2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .img3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .img4 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .img5 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .img6 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="D:\GAYATHRI\img1.jpg" class="img1">
+        <img src="D:\GAYATHRI\img2.jpg" class="img2">
+        <img src="D:\GAYATHRI\img3.avif" class="img3">
+        <img src="D:\GAYATHRI\img4.jpg" class="img4">
+        <img src="D:\GAYATHRI\img5.jpg" class="img5">
+        <img src="D:\GAYATHRI\img6.avif" class="img6">
+    </div>
+</body>
+
+</html>
