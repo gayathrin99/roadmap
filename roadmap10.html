@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Different Tabs</title>
+    <style>
+        .tabs {
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+
+            color: rgb(90, 85, 85);
+        }
+
+        ul li {
+            text-decoration: none;
+            list-style-type: none;
+            display: inline;
+        }
+
+        .contents {
+            visibility: none;
+        }
+
+        .tabcontent {
+            display: none;
+        }
+
+        .tabcontent.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs">
+        <ul>
+            <li class="tablink" onclick="myfunction(event,'first')">First Tab</li>
+
+            <li class="tablink" onclick="myfunction(event,'second')">Second Tab</li>
+            <li class="tablink" onclick="myfunction(event,'third')">Third Tab</li>
+            <li class="tablink" onclick="myfunction(event,'fourth')">Fourth Tab</li>
+        </ul>
+    </div>
+    <div class="contents">
+        <span class="tabcontent active" id="first">First Tab's contents</span>
+        <span class="tabcontent" id="second">Second Tab's contents</span>
+        <span class="tabcontent" id="third">Third Tab's contents</span>
+        <span class="tabcontent" id="fourth">Fourth Tab's contents</span>
+
+
+    </div>
+    <script>
+
+        function myfunction(event, tab) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName('tabcontent')
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+
+            }
+            document.getElementById(tab).classList.add("active");
+            event.currentTarget.classList.add("active");
+        }</script>
+
+</body>
+
+</html>
